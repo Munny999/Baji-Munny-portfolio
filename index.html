@@ -3,323 +3,322 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Baji Munny Shaik | Portfolio</title>
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
-scroll-behavior:smooth;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+  scroll-behavior:smooth;
 }
 
 body{
-background:#050816;
-color:white;
+  background:#050816;
+  color:white;
 }
 
 header{
-position:fixed;
-top:0;
-width:100%;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#0a0f25;
-z-index:1000;
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#0a0f25;
+  z-index:1000;
 }
 
 .logo{
-font-size:32px;
-font-weight:bold;
-color:#38bdf8;
+  font-size:30px;
+  font-weight:bold;
+  color:#38bdf8;
 }
 
 nav a{
-margin-left:25px;
-text-decoration:none;
-color:white;
-font-size:18px;
-transition:.3s;
+  margin-left:22px;
+  text-decoration:none;
+  color:white;
+  font-size:17px;
 }
 
 nav a:hover{
-color:#38bdf8;
+  color:#38bdf8;
 }
 
 .hero{
-padding:140px 8% 80px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-min-height:100vh;
+  min-height:100vh;
+  padding:140px 8% 80px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:50px;
 }
 
 .hero-text{
-max-width:650px;
+  max-width:700px;
 }
 
 .hero-text h1{
-font-size:60px;
-margin-bottom:15px;
+  font-size:58px;
+  margin-bottom:18px;
 }
 
 .hero-text span{
-color:#38bdf8;
+  color:#38bdf8;
 }
 
 .hero-text p{
-font-size:22px;
-line-height:1.8;
-color:#d1d5db;
+  font-size:21px;
+  line-height:1.7;
+  color:#d1d5db;
+}
+
+.profile-img{
+  width:310px;
+  height:310px;
+  border-radius:50%;
+  object-fit:cover;
+  border:6px solid #38bdf8;
+  box-shadow:0 0 35px #38bdf8;
 }
 
 .btn{
-display:inline-block;
-margin-top:25px;
-padding:14px 30px;
-background:#38bdf8;
-color:#050816;
-font-weight:bold;
-text-decoration:none;
-border-radius:30px;
-}
-
-.profile-img{
-width:320px;
-height:320px;
-border-radius:50%;
-object-fit:cover;
-border:6px solid #38bdf8;
-box-shadow:0 0 35px #38bdf8;
+  display:inline-block;
+  margin-top:25px;
+  padding:13px 28px;
+  background:#38bdf8;
+  color:#050816;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:30px;
 }
 
 section{
-padding:80px 8%;
+  padding:80px 8%;
 }
 
 .section-title{
-font-size:42px;
-color:#38bdf8;
-margin-bottom:30px;
+  font-size:40px;
+  color:#38bdf8;
+  margin-bottom:30px;
 }
 
 .about{
-font-size:20px;
-line-height:1.8;
-color:#d1d5db;
+  font-size:19px;
+  line-height:1.8;
+  color:#d1d5db;
+  max-width:1000px;
 }
 
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
 }
 
 .card{
-background:#111827;
-padding:25px;
-border-radius:15px;
-border:1px solid #1f2937;
-transition:.3s;
+  background:#111827;
+  padding:25px;
+  border-radius:16px;
+  border:1px solid #1f2937;
+  transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 15px rgba(56,189,248,0.5);
+  transform:translateY(-8px);
+  box-shadow:0 0 18px rgba(56,189,248,0.5);
 }
 
 .card h3{
-color:#60a5fa;
-margin-bottom:15px;
+  color:#60a5fa;
+  margin-bottom:14px;
 }
 
 .card p{
-line-height:1.7;
-color:#d1d5db;
+  color:#d1d5db;
+  line-height:1.7;
 }
 
 .cert-list li{
-margin:15px 0;
-font-size:18px;
+  margin:14px 0;
+  font-size:18px;
+  color:#d1d5db;
 }
 
 .contact{
-font-size:22px;
-line-height:2;
+  font-size:21px;
+  line-height:2;
 }
 
 footer{
-background:#0a0f25;
-text-align:center;
-padding:20px;
-margin-top:50px;
-color:#94a3b8;
+  background:#0a0f25;
+  text-align:center;
+  padding:22px;
+  color:#94a3b8;
 }
 
 @media(max-width:900px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
 
-.hero{
-text-align:center;
-}
+  .hero-text h1{
+    font-size:42px;
+  }
 
-.hero-text h1{
-font-size:45px;
-}
+  nav{
+    display:none;
+  }
 
-.profile-img{
-margin-top:40px;
-width:250px;
-height:250px;
+  .profile-img{
+    width:250px;
+    height:250px;
+  }
 }
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">Baji Munny</div>
-
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#certifications">Certifications</a>
-<a href="#contact">Contact</a>
-</nav>
+  <div class="logo">Baji Munny</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#internship">Internship</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm <span>Baji Munny Shaik</span></h1>
+    <p>
+      B.Tech Electronics and Communication Engineering student specializing in VLSI.
+      I am interested in both hardware and software domains, including VLSI Design,
+      Digital Verification, Embedded Systems, Java Development, and Web Technologies.
+    </p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
 
-<div class="hero-text">
-<h1>Hi, I'm <span>Baji Munny Shaik</span></h1>
-
-<p>
-B.Tech Electronics & Communication Engineering (VLSI Specialization)
-<br><br>
-Passionate about VLSI Design, Verification, Embedded Systems, Java Development and Software Engineering.
-</p>
-
-<a href="#contact" class="btn">Contact Me</a>
-</div>
-
-<img src="profile.jpg" class="profile-img" alt="Profile Photo">
-
+  <img src="profile.jpg.jpeg" class="profile-img" alt="Baji Munny Shaik">
 </section>
 
 <section id="about">
-
-<h2 class="section-title">About Me</h2>
-
-<p class="about">
-I am a B.Tech ECE student specializing in VLSI with a CGPA of 8.55.
-I was selected among 6 students out of 80 for a VLSI Design and Verification Internship.
-I enjoy building projects in VLSI, Embedded Systems, Java Development and Web Technologies.
-</p>
-
+  <h2 class="section-title">About Me</h2>
+  <p class="about">
+    I am an Electronics and Communication Engineering student with a specialization in VLSI.
+    My objective is to build a strong career in the technology field by applying my knowledge
+    in hardware design, verification, embedded systems, and software development. I am passionate
+    about learning new technologies, solving real-world problems, and contributing to innovative
+    projects in both semiconductor and software industries.
+  </p>
 </section>
 
 <section id="skills">
+  <h2 class="section-title">Skills</h2>
 
-<h2 class="section-title">Skills</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Programming</h3>
+      <p>Java,Python Basics</p>
+    </div>
 
-<div class="grid">
+    <div class="card">
+      <h3>VLSI & Verification</h3>
+      <p>Verilog, SystemVerilog, UVM Basics, Cadence Virtuoso, Vivado</p>
+    </div>
 
-<div class="card">
-<h3>Programming</h3>
-<p>Java, C, Python Basics</p>
-</div>
+    <div class="card">
+      <h3>Software Development</h3>
+      <p>HTML, CSS, ReactJS, Spring Boot, REST APIs, MySQL</p>
+    </div>
 
-<div class="card">
-<h3>VLSI</h3>
-<p>Verilog, SystemVerilog, UVM, Cadence Virtuoso, Vivado</p>
-</div>
+    <div class="card">
+      <h3>Embedded Systems</h3>
+      <p>ESP32, Arduino, Sensor Interfacing, IoT Basics</p>
+    </div>
+  </div>
+</section>
 
-<div class="card">
-<h3>Web Development</h3>
-<p>HTML, CSS, ReactJS, Spring Boot, REST APIs</p>
-</div>
+<section id="internship">
+  <h2 class="section-title">Internship</h2>
 
-<div class="card">
-<h3>Embedded Systems</h3>
-<p>ESP32, Arduino, Sensor Interfacing, IoT</p>
-</div>
-
-</div>
-
+  <div class="card">
+    <h3>VLSI Design and Verification Intern</h3>
+    <p>
+      Completed a 6-month internship at TARAS Systems and Solutions, gaining exposure to
+      VLSI design, digital verification concepts, Verilog, SystemVerilog, UVM methodology,
+      simulation flow, and semiconductor industry practices.
+    </p>
+  </div>
 </section>
 
 <section id="projects">
+  <h2 class="section-title">Projects</h2>
 
-<h2 class="section-title">Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>USART Verification using UVM</h3>
+      <p>
+        Developed a UVM-based verification environment for USART protocol using driver,
+        monitor, sequencer, and scoreboard components.
+      </p>
+    </div>
 
-<div class="grid">
+    <div class="card">
+      <h3>Thermal Map Generation and Hotspot Analysis</h3>
+      <p>
+        Worked on thermal analysis to identify hotspot regions and improve reliability
+        in integrated circuit designs.
+      </p>
+    </div>
 
-<div class="card">
-<h3>USART Verification using UVM</h3>
-<p>
-Developed a UVM-based verification environment using Driver, Monitor, Sequencer and Scoreboard for USART protocol verification.
-</p>
-</div>
+    <div class="card">
+      <h3>Event Management and Booking Platform</h3>
+      <p>
+        Built a web-based platform using ReactJS, Spring Boot, REST APIs, and MySQL for
+        event creation and booking management.
+      </p>
+    </div>
 
-<div class="card">
-<h3>Thermal Map Generation and Hotspot Analysis</h3>
-<p>
-Performed thermal analysis to identify hotspot regions and improve reliability in integrated circuit designs.
-</p>
-</div>
-
-<div class="card">
-<h3>Event Management & Booking Platform</h3>
-<p>
-Built a web application using ReactJS, Spring Boot and MySQL for event creation and booking management.
-</p>
-</div>
-
-<div class="card">
-<h3>Password Manager</h3>
-<p>
-Developed a secure password management application using Java and Object-Oriented Programming concepts.
-</p>
-</div>
-
-</div>
-
+    <div class="card">
+      <h3>Password Manager</h3>
+      <p>
+        Developed a Java-based password manager using Object-Oriented Programming concepts
+        and secure credential storage.
+      </p>
+    </div>
+  </div>
 </section>
 
 <section id="certifications">
+  <h2 class="section-title">Certifications</h2>
 
-<h2 class="section-title">Certifications</h2>
-
-<ul class="cert-list">
-<li>AWS Certified Cloud Practitioner</li>
-<li>Salesforce Agentforce Specialist</li>
-<li>Linguaskill B2 Certification</li>
-<li>Cisco Introduction to Cybersecurity</li>
-</ul>
-
+  <ul class="cert-list">
+    <li>AWS Certified Cloud Practitioner</li>
+    <li>Salesforce Agentforce Specialist</li>
+    <li>Linguaskill B2 Certification</li>
+    <li>Cisco Introduction to Cybersecurity</li>
+  </ul>
 </section>
 
 <section id="contact">
+  <h2 class="section-title">Contact</h2>
 
-<h2 class="section-title">Contact</h2>
-
-<div class="contact">
-📧 Email: bajimunni.999@gmail.com<br>
-💻 GitHub: Munny999
-</div>
-
+  <div class="contact">
+    📧 Email: bajimunni.999@gmail.com <br>
+    💻 GitHub: Munny999
+  </div>
 </section>
 
 <footer>
-© 2026 Baji Munny Shaik | Portfolio
+  © 2026 Baji Munny Shaik | Portfolio
 </footer>
 
 </body>
