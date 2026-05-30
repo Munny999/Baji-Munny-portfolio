@@ -1,34 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Baji Munny Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baji Munny Shaik | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #050816; color: #fff; line-height: 1.6; }
+    header { padding: 25px 10%; display: flex; justify-content: space-between; align-items: center; background: #070b1f; position: sticky; top: 0; }
+    header h2 { color: #38bdf8; }
+    nav a { color: white; margin-left: 20px; text-decoration: none; }
+    nav a:hover { color: #38bdf8; }
+
+    section { padding: 70px 10%; }
+    .hero { min-height: 80vh; display: flex; align-items: center; }
+    .hero h1 { font-size: 45px; }
+    .hero h1 span { color: #38bdf8; }
+    .hero p { margin: 15px 0; color: #cbd5e1; font-size: 18px; }
+    .btn { display: inline-block; padding: 12px 25px; background: #38bdf8; color: #050816; border-radius: 25px; text-decoration: none; font-weight: bold; margin-top: 15px; }
+
+    h2 { color: #38bdf8; margin-bottom: 25px; font-size: 32px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
+    .card { background: #111827; padding: 25px; border-radius: 15px; border: 1px solid #1e293b; }
+    .card h3 { color: #60a5fa; margin-bottom: 10px; }
+    .card p, li { color: #cbd5e1; }
+
+    ul { padding-left: 20px; }
+    footer { text-align: center; padding: 25px; background: #070b1f; color: #94a3b8; }
+  </style>
 </head>
 <body>
-    <h1>Hi, I'm Baji Munny Shaik</h1>
-    <p>B.Tech ECE (VLSI Specialization)</p>
 
+  <header>
+    <h2>Baji Munny</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Hi, I'm <span>Baji Munny Shaik</span></h1>
+      <p>B.Tech ECE student specializing in VLSI, interested in VLSI Design, Embedded Systems, Java Development, and Software Engineering.</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>I am interested in VLSI Design, Embedded Systems, Java Development, and Software Engineering.</p>
+    <p>I am a B.Tech Electronics and Communication Engineering student with specialization in VLSI. I am passionate about VLSI Design, Digital Verification, Embedded Systems, and Software Development.</p>
+  </section>
 
+  <section id="skills">
     <h2>Skills</h2>
-    <ul>
-        <li>Java</li>
-        <li>C</li>
-        <li>Verilog</li>
-        <li>SystemVerilog</li>
-        <li>ESP32</li>
-        <li>Spring Boot</li>
-    </ul>
+    <div class="cards">
+      <div class="card"><h3>Programming</h3><p>Java, C, Python Basics</p></div>
+      <div class="card"><h3>VLSI</h3><p>Verilog, SystemVerilog, UVM, Cadence, Vivado</p></div>
+      <div class="card"><h3>Web</h3><p>HTML, CSS, ReactJS, Spring Boot</p></div>
+      <div class="card"><h3>Embedded</h3><p>ESP32, Arduino, Sensor Interfacing</p></div>
+    </div>
+  </section>
 
+  <section id="projects">
     <h2>Projects</h2>
-    <ul>
-        <li>Event Management and Booking Platform</li>
-        <li>Thermal Map Generation and Hotspot Analysis in Ic </li>
-        <li>Password Manager</li>
-        <li>USART Verification using UVM</li>
-    </ul>
+    <div class="cards">
+      <div class="card">
+        <h3>USART Verification using UVM</h3>
+        <p>Designed a UVM-based verification environment for USART protocol with driver, monitor, sequencer, and scoreboard.</p>
+      </div>
+      <div class="card">
+        <h3>Thermal Map Generation and Hotspot Analysis</h3>
+        <p>Worked on thermal analysis to identify hotspot regions and generate thermal maps for IC design reliability.</p>
+      </div>
+      <div class="card">
+        <h3>Event Management and Booking Platform</h3>
+        <p>Developed a web-based platform using ReactJS, Spring Boot, REST APIs, and MySQL.</p>
+      </div>
+      <div class="card">
+        <h3>Password Manager</h3>
+        <p>Created a Java-based password manager using OOP concepts and secure credential storage.</p>
+      </div>
+    </div>
+  </section>
 
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Cloud Practitioner</li>
+      <li>Salesforce Agentforce Specialist</li>
+      <li>Linguaskill B2</li>
+      <li>Cisco Introduction to Cybersecurity</li>
+    </ul>
+  </section>
+
+  <section id="contact">
     <h2>Contact</h2>
     <p>Email: bajimunni.999@gmail.com</p>
+    <p>GitHub: Munny999</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Baji Munny Shaik | Portfolio</p>
+  </footer>
+
 </body>
 </html>
+
+
+
